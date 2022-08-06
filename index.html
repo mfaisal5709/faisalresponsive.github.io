@@ -127,7 +127,7 @@
 <br><br><br><br><br><br><br> <br><br>
 <h2 id="h2">word counter</h2>
 <textarea id="textbox" cols="30" rows="10"></textarea>
-<p> your <span class="both" id="word">0</span> word and <span class="both" id="char">0</span> charecter</p>
+<p> word <span class="both" id="word">0</span> charecter <span class="both" id="char">0</span> </p>
 <style>
     h2 {
         text-align: center;
@@ -184,7 +184,7 @@
 <style>
     /* ----------------------------------------------end word counter----------------------------------------------------------------------------------------    */
 
-    /* ----------------------------------------------media querry----------------------------------------------------------------------------------------    */
+    /* ----------------------------------------------start media querry word converter----------------------------------------------------------------------------------------    */
     @media (max-width:400px) {
         h2 {
 
@@ -203,10 +203,11 @@
 
     @media (min-width:100px) and (max-width:1000px) {
         #textbox {
-            text-align: left;
-            padding: 36px 253px 125px 255px;
-            margin: 6px -60px 28px -65px;
-            font-size: 22px;
+            width: 616px;
+            height: 363px;
+            padding: 0px 24px 23px 34px;
+            margin: -9px 6px 12px -64px;
+            font-size: 21px;
             background-color: #ccc5c5;
             color: #ff0000;
             border-radius: 39px;
@@ -215,8 +216,9 @@
 
     }
 
-    @media (min-width:100px) and (max-width:1000px){
+    @media (min-width:100px) and (max-width:1000px) {
         p {
+
             margin: 6px -458px 34px -61px;
             font-size: 25px;
             background-color: #399c86;
@@ -228,7 +230,53 @@
 
     }
 
-    /* -------------------------------------------end media querry----------------------------------------------------------------------------------------------    */
+    /* ----------------------------------------------end media querry word converter----------------------------------------------------------------------------------------------    */
+</style>
+<style>
+    /* ----------------------------------------------star media querry temp converter----------------------------------------------------------------------------------------    */
+    @media (min-width:100px) and (max-width:400px) {
+        .inpp {
+
+            font-size: 49px;
+            padding: 0px 0px 0px 5px;
+            margin: 10px 7px 9px -99px;
+            width: 724px;
+            height: 57px;
+            background-color: #0e1f0a;
+            color: #d01717;
+            border-radius: 13px;
+            border: solid rgb(211 31 202);
+        }
+
+    }
+
+    @media (min-width:100px) and (max-width:400px) {
+        #container {
+            padding: 33px 40px 50px 0px;
+            margin: 19px 20px 36px -96px;
+            width: 724px;
+            height: 400px;
+            border-radius: 11px;
+            border: solid rgb(59 171 127);
+        }
+
+    }
+
+    @media (min-width:100px) and (max-width:400px) {
+        px {
+
+            margin: 6px -458px 34px -61px;
+            font-size: 25px;
+            background-color: #399c86;
+            color: #000000;
+            border-radius: 81px;
+            border: solid rgb(54 187 145);
+            display: grid;
+        }
+
+    }
+
+    /* -------------------------------------------end media querry 2nd----------------------------------------------------------------------------------------------    */
 </style>
 
 
