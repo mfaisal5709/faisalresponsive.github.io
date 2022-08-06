@@ -1,73 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resposive</title>
+    <title>mfaisal.github.io</title>
+    <h1 class="inpp">TEMPERATURE CONVERTER</h1>
 </head>
+<style>
+    body {
+        padding: 50px 100px;
+    }
 
-<body>
-    <style>
-        .box{
-            background-color: aqua;
-            text-align: center;
-            font-size: 50px;
-         display: none;
-            
-        }
-        @media(max-width:500px){
-            #box-1{
-                display: block;
-                background-color: blueviolet;
+    h1 {
+        text-align: center;
+        margin: 17px 319px 14px 323px;
+        font-size: 38px;
+    }
+
+    #container {
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #718773;
+        padding: 90px;
+        border-radius: 50px;
+        border: solid black;
+
+    }
+
+    .input-div {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .inp {
+        padding: 5px 10px;
+        margin: 33px 31px 13px 77px;
+        font-size: 38px;
+        font-weight: bold;
+        width: 419px;
+        ;
+        text-align: center;
+        background-color: white;
+        color: black;
+        border-radius: 15px;
+        border: solid black;
+
+
+    }
+
+    .inpp {
+
+        font-size: 45px;
+        text-align: center;
+        background-color: white;
+        color: #59519a;
+        border-radius: 24px;
+        border: solid black;
+
+
+    }
+
+
+    #label {
+        font-size: 22px;
+        font-weight: bold;
+        background: black;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 40px;
+        border: solid rgba(204, 41, 41, 0.686);
+        margin: 6px -25px 22px 5px;
+    }
+</style>
+
+
+<div id="container">
+    <div class="input-div">
+        <label id="label">CELSIUS</label><br>
+        <input type="number" value="0" id="cel" class="inp">
+    </div>
+    <div class="input-div">
+
+    </div>
+    <div class="input-div">
+        <label id="label">FAHRENHEIT</label><br>
+        <input type="number" value="32" id="fah" class="inp">
+    </div>
+
+
+    <script>
+
+        let cel = document.getElementById("cel");
+        let fah = document.getElementById("fah");
+
+
+        cel.addEventListener('input', function () {
+            let c = this.value;
+            let f = (c * 9 / 5) + 32;
+            if (!Number.isInteger(f)) {
+                f = f.toFixed(1);
+
             }
+            fah.value = f;
+        })
+
+        fah.addEventListener('input', function () {
+            let f = this.value;
+            let c = (f - 32) * 5 / 9;
+            if (!Number.isInteger(c)) {
+                c = c.toFixed(1);
+
+            }
+            cel.value = c;
+        })
+
+
+    </script>
+
+    <body>
+
+        <!-- ---------------------------------------------------------word counter------------------------------------------------------------------------------- -->
+
+</div>
+<br><br><br><br><br><br><br> <br><br>
+<h2 id="h2">word counter</h2>
+<textarea id="textbox" cols="30" rows="10"></textarea>
+<p> your <span class="both" id="word">0</span> word and <span class="both" id="char">0</span> charecter</p>
+<style>
+    h2 {
+        text-align: center;
+        background-color: #bd3f3f80;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    #textbox {
+
+        width: 99.48%;
+        border-color: #0067b0;
+        margin: 0%;
+    }
+
+    p {
+        background-color: #90989e;
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .both {
+        background-color: white;
+        color: red;
+        border-radius: 10%;
+
+        padding: 5px 6px 5px 6px;
+    }
+</style>
+<script>
+
+
+    let textbox = document.getElementById("textbox");
+    textbox.addEventListener('input', function () {
+        let text = this.value;
+        let tt = text.length;
+        document.getElementById('char').innerHTML = tt;
+        text = text.trim();
+        let words = text.split(" ")
+        let cltx = words.filter(function (elm) {
+            return elm != "";
+        })
+
+        document.getElementById('word').innerHTML = cltx.length
+
+
+    });
+
+</script>
+
+<style>
+    /* ----------------------------------------------end word counter----------------------------------------------------------------------------------------    */
+
+    /* ----------------------------------------------media querry----------------------------------------------------------------------------------------    */
+    @media (max-width:400px) {
+        h2 {
+
+
+            margin: -6px -449px 25px -71px;
+
+            background-color: white;
+            color: #1e00ff;
+            border-radius: 24px;
+            border: solid rgb(230 23 23);
+
 
         }
-       @media(min-width:500px) and (max-width:700px) {
-            #box-2{
-                display: block;
-                background-color: red;
-            }
 
-        }
-       @media(min-width:700px) and (max-width:900px) {
-            #box-3{
-                display: block;
-                background-color: yellow;
-            }
-        }
-      @media(min-width:900px) and (max-width:1100px) {
-            #box-4{
-                display: block;
-                background-color: blue;
-            }
-        }
-       @media(min-width:1100px) and (max-width:1300px) {
-            #box-5{
-                display: block;
-                background-color: rgb(0, 255, 81);
-            }
+    }
 
+    @media (min-width:100px) and (max-width:1000px) {
+        #textbox {
+            text-align: left;
+            padding: 36px 253px 125px 255px;
+            margin: 6px -60px 28px -65px;
+            font-size: 22px;
+            background-color: #ccc5c5;
+            color: #ff0000;
+            border-radius: 39px;
+            border: solid rgb(189 26 232);
         }
-       @media(min-width:1300px) {
-            #box-6{
-                display: block;
-                background-color: rgb(255, 0, 187);
-            }
 
+    }
+
+    @media (min-width:100px) and (max-width:1000px){
+        p {
+            margin: 6px -458px 34px -61px;
+            font-size: 25px;
+            background-color: #399c86;
+            color: #000000;
+            border-radius: 81px;
+            border: solid rgb(54 187 145);
+            display: grid;
         }
- 
 
-    
-      
-       
-    </style>
-  
-<div class="box" id="box-1">this is computer</div>
-<div class="box" id="box-2">this is my second computer </div>
-<div class="box" id="box-3">this is my third compuer</div>
-<div class="box" id="box-4">this is my fourth computer</div>
-<div class="box" id="box-5">thi is my five computer</div>
-<div class="box" id="box-6">this is my six computer</div>
+    }
+
+    /* -------------------------------------------end media querry----------------------------------------------------------------------------------------------    */
+</style>
+
+
 </body>
+
 </html>
