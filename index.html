@@ -6,6 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mfaisal.github.io</title>
+
+    <style>
+        #color-switcher{
+          text-align: right;
+        }
+        .bgbtn{
+            width: 20px;
+            height: 20px;
+            border: solid rgb(69, 69, 134) 2px;
+            display: inline-block;
+            border-radius: 50%;
+        
+        }
+        #white{
+            background-color: #ffffff;
+        }
+        #aqua{
+            background-color: #7fffd4;
+        }
+        #voilet{
+            background-color: #ee82ee;
+        }
+        #yellow{
+            background-color: #ffff00;
+        }
+        </style>
+        
+        <div id="color-switcher">
+            <div class="bgbtn" id="white" onclick="bgchanger('#ffffff')"></div>
+            <div class="bgbtn" id="aqua" onclick="bgchanger('#7fffd4')"></div>
+            <div class="bgbtn" id="voilet" onclick="bgchanger('#ee82ee')"></div>
+            <div class="bgbtn" id="yellow" onclick="bgchanger('#ffff00')"></div>
+        </div>
+        <script>
+            function bgchanger(color){
+                document.body.style.backgroundColor = color;
+            }
+        </script>
+
+
+
+
+ <!----------------------------------------------------start temp counter------------------------------------------------------------------------------- -->
+
     <h1 class="inpp">TEMPERATURE CONVERTER</h1>
 </head>
 <style>
@@ -75,7 +119,6 @@
     }
 </style>
 
-
 <div id="container">
     <div class="input-div">
         <label id="label">CELSIUS</label><br>
@@ -120,8 +163,10 @@
     </script>
 
     <body>
+<!-- ---------------------------------------------------------end temp counter------------------------------------------------------------------------------- -->
 
-        <!-- ---------------------------------------------------------word counter------------------------------------------------------------------------------- -->
+
+<!-- ---------------------------------------------------------start word counter------------------------------------------------------------------------------- -->
 
 </div>
 <br><br><br><br><br><br><br> <br><br>
