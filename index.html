@@ -6,69 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mfaisal.github.io</title>
-
-    <style>
-        #color-switcher {
-            text-align: right;
-        }
-
-        .bgbtn {
-            width: 20px;
-            height: 20px;
-            border: solid rgb(69, 69, 134) 2px;
-            display: inline-block;
-            border-radius: 50%;
-
-        }
-
-        #white {
-            background-color: #ffffff;
-        }
-
-        #aqua {
-            background-color: #7fffd4;
-        }
-
-        #voilet {
-            background-color: #ee82ee;
-        }
-
-        #yellow {
-            background-color: #ffff00;
-        }
-
-        @media (min-width:100px) and (max-width:400px) {
-            #color-switcher {
-
-                width: 388px;
-                height: 80px;
-                margin: 10px 0px 20px 23px
-            }
-
-            .bgbtn {
-                width: 70px;
-                height: 70px;
-
-            }
-
-        }
-    </style>
-
-    <div id="color-switcher">
-        <div class="bgbtn" id="white" onclick="bgchanger('#ffffff')"></div>
-        <div class="bgbtn" id="aqua" onclick="bgchanger('#7fffd4')"></div>
-        <div class="bgbtn" id="voilet" onclick="bgchanger('#ee82ee')"></div>
-        <div class="bgbtn" id="yellow" onclick="bgchanger('#ffff00')"></div>
-    </div>
-    <script>
-        function bgchanger(color) {
-            document.body.style.backgroundColor = color;
-        }
-    </script>
-
-
-
-
     <!----------------------------------------------------start temp counter------------------------------------------------------------------------------- -->
 
     <h1 class="inpp">TEMPERATURE CONVERTER</h1>
@@ -140,6 +77,7 @@
     }
 </style>
 
+
 <div id="container">
     <div class="input-div">
         <label id="label">CELSIUS</label><br>
@@ -193,7 +131,7 @@
 <br><br><br><br><br><br><br> <br><br>
 <h2 id="h2">word counter</h2>
 <textarea id="textbox" cols="30" rows="10"></textarea>
-<p> word <span class="both" id="word">0</span> charecter <span class="both" id="char">0</span> </p>
+<p id="pwordc"> word <span class="both" id="word">0</span> charecter <span class="both" id="char">0</span> </p>
 <style>
     h2 {
         text-align: center;
@@ -209,7 +147,7 @@
         margin: 0%;
     }
 
-    p {
+    #pwordc {
         background-color: #90989e;
         text-align: center;
         font-weight: bold;
@@ -253,45 +191,30 @@
     /* ----------------------------------------------start media querry word converter----------------------------------------------------------------------------------------    */
     @media (max-width:400px) {
         h2 {
-
-
-            margin: -6px -449px 25px -71px;
-
-            background-color: white;
-            color: #1e00ff;
-            border-radius: 24px;
-            border: solid rgb(230 23 23);
-
-
+            width: 1195px;
+            font-size: 46px;
+            height: 54px;
         }
 
     }
 
-    @media (min-width:100px) and (max-width:1000px) {
+    @media (max-width:400px) {
         #textbox {
-            width: 616px;
-            height: 363px;
-            padding: 0px 24px 23px 34px;
-            margin: -9px 6px 12px -64px;
-            font-size: 21px;
-            background-color: #ccc5c5;
-            color: #ff0000;
-            border-radius: 39px;
-            border: solid rgb(189 26 232);
+            width: 1211px;
+            margin: 20px 20px 20px 0px;
+            height: 600px;
         }
 
     }
 
-    @media (min-width:100px) and (max-width:1000px) {
-        p {
+    @media (max-width:400px) {
+        #pwordc {
 
-            margin: 6px -458px 34px -61px;
-            font-size: 25px;
-            background-color: #399c86;
-            color: #000000;
-            border-radius: 81px;
-            border: solid rgb(54 187 145);
-            display: grid;
+            width: 1211px;
+            margin: 20px 20px 20px -3px;
+            height: 62px;
+            font-size: 58px;
+
         }
 
     }
@@ -300,50 +223,220 @@
 </style>
 <style>
     /* ----------------------------------------------star media querry temp converter----------------------------------------------------------------------------------------    */
-    @media (min-width:100px) and (max-width:400px) {
+    @media (max-width:400px) {
         .inpp {
 
-            font-size: 49px;
-            padding: 0px 0px 0px 5px;
-            margin: 10px 7px 9px -99px;
-            width: 724px;
-            height: 57px;
-            background-color: #0e1f0a;
-            color: #d01717;
-            border-radius: 13px;
-            border: solid rgb(211 31 202);
+            width: 1182px;
+            margin: 20px 20px 20px -3px;
+            height: 68px;
+            font-size: 58px;
+
         }
 
     }
 
-    @media (min-width:100px) and (max-width:400px) {
+    @media (max-width:400px) {
         #container {
-            padding: 33px 40px 50px 0px;
-            margin: 19px 20px 36px -96px;
-            width: 724px;
-            height: 400px;
-            border-radius: 11px;
-            border: solid rgb(59 171 127);
+            width: 1211px;
+            margin: 20px 20px 20px -6px;
+            height: 600px;
+            font-size: 50px;
+
         }
 
     }
 
-    @media (min-width:100px) and (max-width:400px) {
-        px {
 
-            margin: 6px -458px 34px -61px;
-            font-size: 25px;
-            background-color: #399c86;
-            color: #000000;
-            border-radius: 81px;
-            border: solid rgb(54 187 145);
-            display: grid;
-        }
 
-    }
+
 
     /* -------------------------------------------end media querry 2nd----------------------------------------------------------------------------------------------    */
 </style>
+<style>
+    /* body {
+
+        margin: 20px 100px;
+    } */
+
+    h3 {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    #bg1 {
+        margin: 50px 200px 50px 200px;
+        width: 900px;
+        height: 700px;
+    }
+
+    #bgp1 {
+        text-align: justify;
+        margin: 30px 140px;
+        color: red;
+    }
+
+    #color-switcher {
+        text-align: right;
+        /* border: solid rgb(24, 97, 48) 1px;
+        margin: 3px 2px 0px 1184px;
+        border-radius: 5%;
+        background-color: lightgrey; */
+    }
+
+    .btn {
+        height: 25px;
+        width: 25px;
+        display: inline-block;
+        border: solid green 2px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    #blue {
+        background-color: #47d4d4;
+    }
+
+    #aqua {
+        background-color: #7fffd4;
+    }
+
+    #violet {
+        background-color: #ee82ee;
+    }
+
+    #black {
+        background-color: black;
+    }
+
+    #grey {
+        background-color: #808080;
+    }
+
+    #darkblue {
+        background-color: #00008b;
+    }
+
+    #white {
+        background-color: #ffffff;
+    }
+
+    @media (max-width:400px) {
+        .textbg {
+            width: 1004px;
+            height: 88px;
+            font-size: 35px;
+        }
+
+        #color-switcher {
+            width: 1204px;
+            margin: 20px 0px 20px 0px;
+            height: 88px
+        }
+
+        .btn {
+            width: 100px;
+            margin: 18px 20px 6px 18px;
+            height: 89px;
+
+        }
+
+        .bg1 {
+
+            margin: 50px 200px 50px 120px;
+            width: 1049px;
+            height: 700px;
+        }
+
+        .bgp1 {
+
+
+            width: 1000px;
+            margin: 45px 10px 20px -8px;
+            height: 12px;
+            font-size: 29px;
+
+        }
+        #distence{
+            margin: 0%;
+        }
+
+    }
+</style>
+<div id="distence">
+<br><br><br><br><br><br><br> <br><br>
+<div id="color-switcher">
+    <span class="btn" id="white" onclick="changebg('#ffffff')"></span>
+    <span class="btn" id="grey" onclick="changebg('#808080')"></span>
+    <span class="btn" id="darkblue" onclick="changebg('#00008b')"></span>
+    <span class="btn" id="blue" onclick="changebg('#47d4d4')"></span>
+    <span class="btn" id="aqua" onclick="changebg('#7fffd4')"></span>
+    <span class="btn" id="violet" onclick="changebg('#ee82ee')"></span>
+    <span class="btn" id="black" onclick="changebg('#000000')"></span>
+</div>
+<h3 class="textbg">Project 3rd by (asad)</h3>
+<img id="bg1" src="img/ocean.jpg" alt="">
+<p id="bgp1" class="textbg">A paragraph is a series of sentences that are organized and coherent, and are all related to
+    a
+    single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into
+    paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus
+    help the reader see the organization of the essay and grasp its main points.
+
+    Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples
+    or a single long illustration of a general point. It might describe a place, character, or process; narrate a
+    series of events; compare or contrast two or more things; classify items into categories; or describe causes and
+    effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One
+    of the most important of these is a topic sentence.
+
+    TOPIC SENTENCES
+    A well-organized paragraph supports or develops a single controlling idea, which is expressed in a sentence
+    called the topic sentence. A topic sentence has several important functions: it substantiates or supports an
+    essay’s thesis statement; it unifies the content of a paragraph and directs the order of the sentences; and it
+    advises the reader of the subject to be discussed and how the paragraph will discuss it. Readers generally look
+    to the first few sentences in a paragraph to determine the subject and perspective of the paragraph. That’s why
+    it’s often best to put the topic sentence at the very beginning of the paragraph. In some cases, however, it’s
+    more effective to place another sentence before the topic sentence—for example, a sentence linking the current
+    paragraph to the previous one, or one providing background information.A paragraph is a series of sentences that
+    are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is
+    longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where
+    the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp
+    its main points.
+
+    Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples
+    or a single long illustration of a general point. It might describe a place, character, or process; narrate a
+    series of events; compare or contrast two or more things; classify items into categories; or describe causes and
+    effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One
+    of the most important of these is a topic sentence.
+
+    TOPIC SENTENCES
+    A well-organized paragraph supports or develops a single controlling idea, which is expressed in a sentence
+    called the topic sentence. A topic sentence has several important functions: it substantiates or supports an
+    essay’s thesis statement; it unifies the content of a paragraph and directs the order of the sentences; and it
+    advises the reader of the subject to be discussed and how the paragraph will discuss it. Readers generally look
+    to the first few sentences in a paragraph to determine the subject and perspective of the paragraph. That’s why
+    it’s often best to put the topic sentence at the very beginning of the paragraph. In some cases, however, it’s
+    more effective to place another sentence before the topic sentence—for example, a sentence linking the current
+    paragraph to the previous one, or one providing background information.
+</p>
+</div>
+<script>
+    function changebg(color) {
+        document.body.style.background = color;
+
+        let text = document.getElementsByClassName('textbg')
+
+        if (color == '#000000') {
+            for (let elm of text) {
+                elm.style.color = "white"
+            }
+
+        } else {
+            for (let elm of text) {
+                elm.style.color = "black"
+            }
+
+        }
+    }
+</script>
 
 
 </body>
