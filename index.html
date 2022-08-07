@@ -8,47 +8,68 @@
     <title>mfaisal.github.io</title>
 
     <style>
-        #color-switcher{
-          text-align: right;
+        #color-switcher {
+            text-align: right;
         }
-        .bgbtn{
+
+        .bgbtn {
             width: 20px;
             height: 20px;
             border: solid rgb(69, 69, 134) 2px;
             display: inline-block;
             border-radius: 50%;
-        
+
         }
-        #white{
+
+        #white {
             background-color: #ffffff;
         }
-        #aqua{
+
+        #aqua {
             background-color: #7fffd4;
         }
-        #voilet{
+
+        #voilet {
             background-color: #ee82ee;
         }
-        #yellow{
+
+        #yellow {
             background-color: #ffff00;
         }
-        </style>
-        
-        <div id="color-switcher">
-            <div class="bgbtn" id="white" onclick="bgchanger('#ffffff')"></div>
-            <div class="bgbtn" id="aqua" onclick="bgchanger('#7fffd4')"></div>
-            <div class="bgbtn" id="voilet" onclick="bgchanger('#ee82ee')"></div>
-            <div class="bgbtn" id="yellow" onclick="bgchanger('#ffff00')"></div>
-        </div>
-        <script>
-            function bgchanger(color){
-                document.body.style.backgroundColor = color;
+
+        @media (min-width:100px) and (max-width:400px) {
+            #color-switcher {
+
+                width: 388px;
+                height: 80px;
+                margin: 10px 0px 20px 23px
             }
-        </script>
+
+            .bgbtn {
+                width: 70px;
+                height: 70px;
+
+            }
+
+        }
+    </style>
+
+    <div id="color-switcher">
+        <div class="bgbtn" id="white" onclick="bgchanger('#ffffff')"></div>
+        <div class="bgbtn" id="aqua" onclick="bgchanger('#7fffd4')"></div>
+        <div class="bgbtn" id="voilet" onclick="bgchanger('#ee82ee')"></div>
+        <div class="bgbtn" id="yellow" onclick="bgchanger('#ffff00')"></div>
+    </div>
+    <script>
+        function bgchanger(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
 
 
 
 
- <!----------------------------------------------------start temp counter------------------------------------------------------------------------------- -->
+    <!----------------------------------------------------start temp counter------------------------------------------------------------------------------- -->
 
     <h1 class="inpp">TEMPERATURE CONVERTER</h1>
 </head>
@@ -163,10 +184,10 @@
     </script>
 
     <body>
-<!-- ---------------------------------------------------------end temp counter------------------------------------------------------------------------------- -->
+        <!-- ---------------------------------------------------------end temp counter------------------------------------------------------------------------------- -->
 
 
-<!-- ---------------------------------------------------------start word counter------------------------------------------------------------------------------- -->
+        <!-- ---------------------------------------------------------start word counter------------------------------------------------------------------------------- -->
 
 </div>
 <br><br><br><br><br><br><br> <br><br>
