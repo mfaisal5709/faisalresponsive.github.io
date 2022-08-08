@@ -402,7 +402,8 @@
         #bgp1 {
             text-align: justify;
             margin: 3.0rem 14.0rem;
-            color: red;
+            color: rgb(0, 0, 0);
+            font-size: 3.0rem;
         }
 
         #color-switcher {
@@ -641,20 +642,30 @@
                 for (let elm of text) {
                     elm.style.color = "white"
                 }
+        
 
-            } else {
+            } else if (color == '#00008b'){
+                for (let elm of text) {
+                    elm.style.color = "red"
+                }
+            }
+            
+            
+            else {
                 for (let elm of text) {
                     elm.style.color = "black"
                 }
 
             }
+            
         }
+      
     </script>
     <style>
         @media(max-width: 400px){
     
     html{
-        font-size: 15%;
+        font-size: 15.625%;
     }
     
     }
