@@ -1,96 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head></head>
+
+<body>
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mfaisal.github.io</title>
     <!----------------------------------------------------start temp counter------------------------------------------------------------------------------- -->
 
-    <h1 class="inpp">TEMPERATURE CONVERTER</h1>
-</head>
-<style>
-    body {
-        padding: 50px 100px;
-    }
-
-    h1 {
-        text-align: center;
-        margin: 17px 319px 14px 323px;
-        font-size: 38px;
-    }
-
-    #container {
-        box-sizing: border-box;
-        text-align: center;
-        background-color: #718773;
-        padding: 90px;
-        border-radius: 50px;
-        border: solid black;
-
-    }
-
-    .input-div {
-        display: inline-block;
-        text-align: center;
-    }
-
-    .inp {
-        padding: 5px 10px;
-        margin: 33px 31px 13px 77px;
-        font-size: 38px;
-        font-weight: bold;
-        width: 419px;
-        ;
-        text-align: center;
-        background-color: white;
-        color: black;
-        border-radius: 15px;
-        border: solid black;
-
-
-    }
-
-    .inpp {
-
-        font-size: 45px;
-        text-align: center;
-        background-color: white;
-        color: #59519a;
-        border-radius: 24px;
-        border: solid black;
-
-
-    }
-
-
-    #label {
-        font-size: 22px;
-        font-weight: bold;
-        background: black;
-        color: white;
-        padding: 5px 10px;
-        border-radius: 40px;
-        border: solid rgba(204, 41, 41, 0.686);
-        margin: 6px -25px 22px 5px;
-    }
-</style>
-
-
-<div id="container">
-    <div class="input-div">
-        <label id="label">CELSIUS</label><br>
-        <input type="number" value="0" id="cel" class="inp">
-    </div>
-    <div class="input-div">
-
-    </div>
-    <div class="input-div">
-        <label id="label">FAHRENHEIT</label><br>
-        <input type="number" value="32" id="fah" class="inp">
     </div>
 
+    <style>
+        #menulist {
+            background-color: #00fff2;
+            text-align: center;
+            border: solid black 1px;
+
+        }
+
+        .list1menu {
+            display: inline-block;
+            font-size: 15px;
+            padding: 10px;
+            border: solid red 1px;
+            border-radius: 50%;
+            margin: 10px 20px;
+            cursor: pointer;
+            margin: 2px 70px;
+            background-color: #3949ab8a;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+
+        }
+
+        #header {
+            text-align: center;
+
+        }
+
+        #img-bg {
+            width: 250px;
+            height: auto;
+            text-align: center;
+            border-radius: 50%;
+        }
+
+        .abcdf {
+            font-size: 0%;
+        }
+
+
+
+        @media (max-width:400px) {
+            #img-bg {
+
+
+                margin: 0px;
+                height: auto
+            }
+
+            #header {
+                margin: 0px 500px;
+
+
+            }
+
+            #menulist {
+                display: inline-block
+            }
+
+            .abcdf {
+                font-size: 0px;
+            }
+
+            .list1menu {
+                font-size: 5px;
+                margin: 3px 15.4px;
+            }
+
+        }
+    </style>
+    <div id="header"> <img id="img-bg"
+            src="https://img.freepik.com/free-psd/logo-mockup_35913-2089.jpg?w=996&t=st=1659930864~exp=1659931464~hmac=44d67d961efede65c5ffa17ff46bd056bbda4784ce43a95eafda59d0623d8daa"
+            alt="">
+    </div>
+
+    <div id="menulist">
+        <a class="abcdf" href="https:www.google.com">
+            <li class="list1menu"> Google.com </li>
+        </a>
+        <a class="abcdf" href="https:www.facebook.com">
+            <li class="list1menu"> Facebook.com </li>
+        </a>
+        <a class="abcdf" href="https:www.twitter.com">
+            <li class="list1menu"> Twitter.com </li>
+        </a>
+        <a class="abcdf" href="https:www.outlook.com">
+            <li class="list1menu"> outlook.com </li>
+        </a>
+        <a class="abcdf" href="https:www.wikipedia.com">
+            <li class="list1menu"> wikipedia.com </li>
+        </a>
+
+
+    </div>
+    <script>
+        window.addEventListener('scroll', function () {
+            let menu = document.getElementById('menulist')
+
+            if (window.pageYOffset >= 171.533) {
+                menu.classList.add('sticky')
+
+            } else {
+                menu.classList.remove('sticky')
+            }
+
+
+        })
+
+    </script>
+    <!-- -----------------------------------------------------1 end--------------------------------------------------------------------------------------- -->
+
+    <br><br><br><br><br>
+
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 17px 319px 14px 323px;
+            font-size: 38px;
+        }
+
+        #container {
+            box-sizing: border-box;
+            text-align: center;
+            background-color: #718773;
+            padding: 90px;
+            border-radius: 50px;
+            border: solid black;
+            margin: 50px 100px;
+
+        }
+
+        .input-div {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .inp {
+            padding: 5px 10px;
+            margin: 33px 31px 13px 77px;
+            font-size: 38px;
+            font-weight: bold;
+            width: 419px;
+            ;
+            text-align: center;
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            border: solid black;
+
+
+        }
+
+        .inpp {
+
+            font-size: 45px;
+            text-align: center;
+            background-color: white;
+            color: #59519a;
+            border-radius: 24px;
+            border: solid black;
+
+
+        }
+
+
+        #label {
+            font-size: 22px;
+            font-weight: bold;
+            background: black;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 40px;
+            border: solid rgba(204, 41, 41, 0.686);
+            margin: 6px -25px 22px 5px;
+        }
+
+        /* ----------------------------------------------star media querry temp converter----------------------------------------------------------------------------------------    */
+
+
+        @media (max-width:400px) {
+            #container {
+
+                width: 1211px;
+                margin: 0px;
+                height: 600px;
+                font-size: 50px;
+
+            }
+
+        }
+
+        #qdis1 {
+            text-align: center;
+        }
+
+
+
+
+
+        /* -------------------------------------------end media querry 2nd----------------------------------------------------------------------------------------------    */
+    </style>
+
+
+    <div id="qdis1">
+        <h1 class="inpp">TEMPERATURE CONVERTER</h1>
+        <div id="container">
+            <div class="input-div">
+                <label id="label">CELSIUS</label><br>
+                <input type="number" value="0" id="cel" class="inp">
+            </div>
+            <div class="input-div">
+
+            </div>
+            <div class="input-div">
+                <label id="label">FAHRENHEIT</label><br>
+                <input type="number" value="32" id="fah" class="inp">
+            </div>
+        </div>
+    </div>
 
     <script>
 
@@ -121,322 +272,384 @@
 
     </script>
 
-    <body>
-        <!-- ---------------------------------------------------------end temp counter------------------------------------------------------------------------------- -->
+
+    <!-- ---------------------------------------------------------end temp counter------------------------------------------------------------------------------- -->
+
+    <!-----------------------------------------------------------start word counter------------------------------------------------------------------------------- -->
 
 
-        <!-- ---------------------------------------------------------start word counter------------------------------------------------------------------------------- -->
-
-</div>
-<br><br><br><br><br><br><br> <br><br>
-<h2 id="h2">word counter</h2>
-<textarea id="textbox" cols="30" rows="10"></textarea>
-<p id="pwordc"> word <span class="both" id="word">0</span> charecter <span class="both" id="char">0</span> </p>
-<style>
-    h2 {
-        text-align: center;
-        background-color: #bd3f3f80;
-        padding: 10px;
-        margin: 0px;
-    }
-
-    #textbox {
-
-        width: 99.48%;
-        border-color: #0067b0;
-        margin: 0%;
-    }
-
-    #pwordc {
-        background-color: #90989e;
-        text-align: center;
-        font-weight: bold;
-        font-size: 25px;
-        padding: 10px;
-        margin: 0px;
-    }
-
-    .both {
-        background-color: white;
-        color: red;
-        border-radius: 10%;
-
-        padding: 5px 6px 5px 6px;
-    }
-</style>
-<script>
 
 
-    let textbox = document.getElementById("textbox");
-    textbox.addEventListener('input', function () {
-        let text = this.value;
-        let tt = text.length;
-        document.getElementById('char').innerHTML = tt;
-        text = text.trim();
-        let words = text.split(" ")
-        let cltx = words.filter(function (elm) {
-            return elm != "";
-        })
+    <br><br> <br><br>
+    <div id="ceter2">
+        <h2 id="h2">word counter</h2>
+        <textarea id="textbox" cols="30" rows="10"></textarea>
+        <p id="pwordc"> word <span class="both" id="word">0</span> charecter <span class="both" id="char">0</span>
+        </p>
+    </div>
+    <style>
+        #ceter2 {
+            margin: 50px 200px;
+        }
 
-        document.getElementById('word').innerHTML = cltx.length
-
-
-    });
-
-</script>
-
-<style>
-    /* ----------------------------------------------end word counter----------------------------------------------------------------------------------------    */
-
-    /* ----------------------------------------------start media querry word converter----------------------------------------------------------------------------------------    */
-    @media (max-width:400px) {
         h2 {
-            width: 1195px;
-            font-size: 46px;
-            height: 54px;
+            text-align: center;
+            background-color: #bd3f3f80;
+            padding: 10px;
+            margin: 0px;
         }
 
-    }
-
-    @media (max-width:400px) {
         #textbox {
-            width: 1211px;
-            margin: 20px 20px 20px 0px;
-            height: 600px;
+
+            width: 99.48%;
+            border-color: #0067b0;
+            margin: 0%;
         }
 
-    }
-
-    @media (max-width:400px) {
         #pwordc {
+            background-color: #90989e;
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px;
+            padding: 10px;
+            margin: 0px;
+        }
 
-            width: 1211px;
-            margin: 20px 20px 20px -3px;
-            height: 62px;
-            font-size: 58px;
+        .both {
+            background-color: white;
+            color: red;
+            border-radius: 10%;
+
+            padding: 5px 6px 5px 6px;
+        }
+    </style>
+    <script>
+
+
+        let textbox = document.getElementById("textbox");
+        textbox.addEventListener('input', function () {
+            let text = this.value;
+            let tt = text.length;
+            document.getElementById('char').innerHTML = tt;
+            text = text.trim();
+            let words = text.split(" ")
+            let cltx = words.filter(function (elm) {
+                return elm != "";
+            })
+
+            document.getElementById('word').innerHTML = cltx.length
+
+
+        });
+
+    </script>
+
+    <style>
+        /* ----------------------------------------------end word counter----------------------------------------------------------------------------------------    */
+
+        /* ----------------------------------------------start media querry word converter----------------------------------------------------------------------------------------    */
+        @media (max-width:400px) {
+            h2 {
+                width: 1195px;
+                font-size: 46px;
+                height: 54px;
+            }
 
         }
 
-    }
-
-    /* ----------------------------------------------end media querry word converter----------------------------------------------------------------------------------------------    */
-</style>
-<style>
-    /* ----------------------------------------------star media querry temp converter----------------------------------------------------------------------------------------    */
-    @media (max-width:400px) {
-        .inpp {
-
-            width: 1182px;
-            margin: 20px 20px 20px -3px;
-            height: 68px;
-            font-size: 58px;
+        @media (max-width:400px) {
+            #textbox {
+                width: 1211px;
+                margin: 20px 20px 20px 0px;
+                height: 600px;
+            }
 
         }
 
-    }
+        @media (max-width:400px) {
+            #pwordc {
 
-    @media (max-width:400px) {
-        #container {
-            width: 1211px;
-            margin: 20px 20px 20px -6px;
-            height: 600px;
-            font-size: 50px;
+                width: 1211px;
+                margin: 20px 20px 20px -3px;
+                height: 62px;
+                font-size: 58px;
+
+            }
 
         }
 
-    }
-
-
-
-
-
-    /* -------------------------------------------end media querry 2nd----------------------------------------------------------------------------------------------    */
-</style>
-<style>
-    /* body {
+        /* ----------------------------------------------end media querry word converter----------------------------------------------------------------------------------------------    */
+    </style>
+    <style>
+    </style>
+    <style>
+        /* body {
 
         margin: 20px 100px;
     } */
 
-    h3 {
-        text-align: center;
-        text-decoration: underline;
-    }
-
-    #bg1 {
-        margin: 50px 200px 50px 200px;
-        width: 900px;
-        height: 700px;
-    }
-
-    #bgp1 {
-        text-align: justify;
-        margin: 30px 140px;
-        color: red;
-    }
-
-    #color-switcher {
-        text-align: right;
-        /* border: solid rgb(24, 97, 48) 1px;
-        margin: 3px 2px 0px 1184px;
-        border-radius: 5%;
-        background-color: lightgrey; */
-    }
-
-    .btn {
-        height: 25px;
-        width: 25px;
-        display: inline-block;
-        border: solid green 2px;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    #blue {
-        background-color: #47d4d4;
-    }
-
-    #aqua {
-        background-color: #7fffd4;
-    }
-
-    #violet {
-        background-color: #ee82ee;
-    }
-
-    #black {
-        background-color: black;
-    }
-
-    #grey {
-        background-color: #808080;
-    }
-
-    #darkblue {
-        background-color: #00008b;
-    }
-
-    #white {
-        background-color: #ffffff;
-    }
-
-    @media (max-width:400px) {
-        .textbg {
-            width: 1004px;
-            height: 88px;
-            font-size: 35px;
+        h3 {
+            text-align: center;
+            text-decoration: underline;
         }
 
-        #color-switcher {
-            width: 1204px;
-            margin: 20px 0px 20px 0px;
-            height: 88px
-        }
-
-        .btn {
-            width: 100px;
-            margin: 18px 20px 6px 18px;
-            height: 89px;
-
-        }
-
-        .bg1 {
-
-            margin: 50px 200px 50px 120px;
-            width: 1049px;
+        #bg1 {
+            margin: 50px 200px 50px 200px;
+            width: 900px;
             height: 700px;
         }
 
-        .bgp1 {
-
-
-            width: 1000px;
-            margin: 45px 10px 20px -8px;
-            height: 12px;
-            font-size: 29px;
-
-        }
-        #distence{
-            margin: 0%;
+        #bgp1 {
+            text-align: justify;
+            margin: 30px 140px;
+            color: red;
         }
 
-    }
-</style>
-<div id="distence">
-<br><br><br><br><br><br><br> <br><br>
-<div id="color-switcher">
-    <span class="btn" id="white" onclick="changebg('#ffffff')"></span>
-    <span class="btn" id="grey" onclick="changebg('#808080')"></span>
-    <span class="btn" id="darkblue" onclick="changebg('#00008b')"></span>
-    <span class="btn" id="blue" onclick="changebg('#47d4d4')"></span>
-    <span class="btn" id="aqua" onclick="changebg('#7fffd4')"></span>
-    <span class="btn" id="violet" onclick="changebg('#ee82ee')"></span>
-    <span class="btn" id="black" onclick="changebg('#000000')"></span>
-</div>
-<h3 class="textbg">Project 3rd by (asad)</h3>
-<img id="bg1" src="ocean.jpg.jpg" alt="">
-<p id="bgp1" class="textbg">A paragraph is a series of sentences that are organized and coherent, and are all related to
-    a
-    single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into
-    paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus
-    help the reader see the organization of the essay and grasp its main points.
+        #color-switcher {
+            text-align: center;
+            background-color: #718773;
 
-    Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples
-    or a single long illustration of a general point. It might describe a place, character, or process; narrate a
-    series of events; compare or contrast two or more things; classify items into categories; or describe causes and
-    effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One
-    of the most important of these is a topic sentence.
+        }
 
-    TOPIC SENTENCES
-    A well-organized paragraph supports or develops a single controlling idea, which is expressed in a sentence
-    called the topic sentence. A topic sentence has several important functions: it substantiates or supports an
-    essay’s thesis statement; it unifies the content of a paragraph and directs the order of the sentences; and it
-    advises the reader of the subject to be discussed and how the paragraph will discuss it. Readers generally look
-    to the first few sentences in a paragraph to determine the subject and perspective of the paragraph. That’s why
-    it’s often best to put the topic sentence at the very beginning of the paragraph. In some cases, however, it’s
-    more effective to place another sentence before the topic sentence—for example, a sentence linking the current
-    paragraph to the previous one, or one providing background information.A paragraph is a series of sentences that
-    are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is
-    longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where
-    the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp
-    its main points.
+        .btn {
+            height: 25px;
+            width: 25px;
+            display: inline-block;
+            border: solid green 2px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 2px 30px;
+        }
 
-    Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples
-    or a single long illustration of a general point. It might describe a place, character, or process; narrate a
-    series of events; compare or contrast two or more things; classify items into categories; or describe causes and
-    effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One
-    of the most important of these is a topic sentence.
+        #blue {
+            background-color: #47d4d4;
+        }
 
-    TOPIC SENTENCES
-    A well-organized paragraph supports or develops a single controlling idea, which is expressed in a sentence
-    called the topic sentence. A topic sentence has several important functions: it substantiates or supports an
-    essay’s thesis statement; it unifies the content of a paragraph and directs the order of the sentences; and it
-    advises the reader of the subject to be discussed and how the paragraph will discuss it. Readers generally look
-    to the first few sentences in a paragraph to determine the subject and perspective of the paragraph. That’s why
-    it’s often best to put the topic sentence at the very beginning of the paragraph. In some cases, however, it’s
-    more effective to place another sentence before the topic sentence—for example, a sentence linking the current
-    paragraph to the previous one, or one providing background information.
-</p>
-</div>
-<script>
-    function changebg(color) {
-        document.body.style.background = color;
+        #aqua {
+            background-color: #7fffd4;
+        }
 
-        let text = document.getElementsByClassName('textbg')
+        #violet {
+            background-color: #ee82ee;
+        }
 
-        if (color == '#000000') {
-            for (let elm of text) {
-                elm.style.color = "white"
+        #black {
+            background-color: black;
+        }
+
+        #grey {
+            background-color: #808080;
+        }
+
+        #darkblue {
+            background-color: #00008b;
+        }
+
+        #white {
+            background-color: #ffffff;
+        }
+
+        #centerbgc {
+            text-align: center;
+        }
+
+        @media (max-width:400px) {
+            .textbg {
+                width: 1004px;
+                height: 88px;
+                font-size: 35px;
             }
 
-        } else {
-            for (let elm of text) {
-                elm.style.color = "black"
+            #color-switcher {
+                width: 1204px;
+                margin: 20px 0px 20px 0px;
+                height: 88px
+            }
+
+            .btn {
+                width: 100px;
+                margin: 18px 20px 6px 18px;
+                height: 89px;
+
+            }
+
+            .bg1 {
+
+                margin: 50px 200px 50px 120px;
+                width: 1049px;
+                height: 700px;
+            }
+
+            .bgp1 {
+
+
+                width: 1000px;
+                margin: 45px 10px 20px -8px;
+                height: 12px;
+                font-size: 29px;
+
+            }
+
+            #distence {
+                margin: 0%;
             }
 
         }
-    }
-</script>
+
+        @media (min-width:400px) and (max-width:1000px) {
+            .textbg {
+                width: 1032px;
+                height: 39px;
+                font-size: 18px;
+            }
+
+
+            #color-switcher {
+                width: 1204px;
+                margin: 0px;
+                height: 88px
+            }
+
+            .btn {
+                width: 100px;
+                margin: 18px 20px 6px 18px;
+                height: 89px;
+
+            }
+
+            .bg1 {
+
+                margin: 50px 200px 50px 120px;
+                width: auto;
+                height: auto;
+            }
+
+            .bgp1 {
+
+
+                width: 1000px;
+                margin: 45px 10px 20px -8px;
+                height: 12px;
+                font-size: 29px;
+
+            }
+
+            #distence {
+                margin: 0px;
+            }
+
+
+        }
+    </style>
+    <div id="distence">
+        <br><br><br><br><br><br><br> <br><br>
+        <div id="color-switcher">
+            <span class="btn" id="white" onclick="changebg('#ffffff')"></span>
+            <span class="btn" id="grey" onclick="changebg('#808080')"></span>
+            <span class="btn" id="darkblue" onclick="changebg('#00008b')"></span>
+            <span class="btn" id="blue" onclick="changebg('#47d4d4')"></span>
+            <span class="btn" id="aqua" onclick="changebg('#7fffd4')"></span>
+            <span class="btn" id="violet" onclick="changebg('#ee82ee')"></span>
+            <span class="btn" id="black" onclick="changebg('#000000')"></span>
+        </div>
+        <div id="centerbgc">
+            <h3 class="textbg">Project 3rd by (asad)</h3>
+            <img id="bg1"
+                src="https://images.pexels.com/photos/50594/sea-bay-waterfront-beach-50594.jpeg?cs=srgb&dl=pexels-pixabay-50594.jpg&fm=jpg"
+                alt="">
+            <p id="bgp1" class="textbg">A paragraph is a series of sentences that are organized and coherent, and
+                are all
+                related to
+                a
+                single topic. Almost every piece of writing you do that is longer than a few sentences should be
+                organized into
+                paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and
+                end, and thus
+                help the reader see the organization of the essay and grasp its main points.
+
+                Paragraphs can contain many different kinds of information. A paragraph could contain a series of
+                brief examples
+                or a single long illustration of a general point. It might describe a place, character, or process;
+                narrate a
+                series of events; compare or contrast two or more things; classify items into categories; or
+                describe causes and
+                effects. Regardless of the kind of information they contain, all paragraphs share certain
+                characteristics. One
+                of the most important of these is a topic sentence.
+
+                TOPIC SENTENCES
+                A well-organized paragraph supports or develops a single controlling idea, which is expressed in a
+                sentence
+                called the topic sentence. A topic sentence has several important functions: it substantiates or
+                supports an
+                essay’s thesis statement; it unifies the content of a paragraph and directs the order of the
+                sentences; and it
+                advises the reader of the subject to be discussed and how the paragraph will discuss it. Readers
+                generally look
+                to the first few sentences in a paragraph to determine the subject and perspective of the paragraph.
+                That’s why
+                it’s often best to put the topic sentence at the very beginning of the paragraph. In some cases,
+                however, it’s
+                more effective to place another sentence before the topic sentence—for example, a sentence linking
+                the current
+                paragraph to the previous one, or one providing background information.A paragraph is a series of
+                sentences that
+                are organized and coherent, and are all related to a single topic. Almost every piece of writing you
+                do that is
+                longer than a few sentences should be organized into paragraphs. This is because paragraphs show a
+                reader where
+                the subdivisions of an essay begin and end, and thus help the reader see the organization of the
+                essay and grasp
+                its main points.
+
+                Paragraphs can contain many different kinds of information. A paragraph could contain a series of
+                brief examples
+                or a single long illustration of a general point. It might describe a place, character, or process;
+                narrate a
+                series of events; compare or contrast two or more things; classify items into categories; or
+                describe causes and
+                effects. Regardless of the kind of information they contain, all paragraphs share certain
+                characteristics. One
+                of the most important of these is a topic sentence.
+
+                TOPIC SENTENCES
+                A well-organized paragraph supports or develops a single controlling idea, which is expressed in a
+                sentence
+                called the topic sentence. A topic sentence has several important functions: it substantiates or
+                supports an
+                essay’s thesis statement; it unifies the content of a paragraph and directs the order of the
+                sentences; and it
+                advises the reader of the subject to be discussed and how the paragraph will discuss it. Readers
+                generally look
+                to the first few sentences in a paragraph to determine the subject and perspective of the paragraph.
+                That’s why
+                it’s often best to put the topic sentence at the very beginning of the paragraph. In some cases,
+                however, it’s
+                more effective to place another sentence before the topic sentence—for example, a sentence linking
+                the current
+                paragraph to the previous one, or one providing background information.
+            </p>
+        </div>
+    </div>
+    <script>
+        function changebg(color) {
+            document.body.style.background = color;
+
+            let text = document.getElementsByClassName('textbg')
+
+            if (color == '#000000') {
+                for (let elm of text) {
+                    elm.style.color = "white"
+                }
+
+            } else {
+                for (let elm of text) {
+                    elm.style.color = "black"
+                }
+
+            }
+        }
+    </script>
 
 
 </body>
