@@ -32,6 +32,7 @@
             cursor: pointer;
             margin: .2rem 7.0rem;
             background-color: #3949ab8a;
+            color: white;
         }
 
         .sticky {
@@ -128,6 +129,137 @@
 
     </script>
     <!-- -----------------------------------------------------1 end--------------------------------------------------------------------------------------- -->
+    <!-- -----------------------------------------------------2 start--------------------------------------------------------------------------------------- -->
+
+    <div id="bodylogin">
+       
+
+        <div id="container-login" >
+            <h2 id="loginh2">login</h2>
+            <form action="" onsubmit="return formfilled()">
+                <input type="text" placeholder="user id" id="username"><br>
+                <p class="loginp" id="usere"></p>
+                <input type="text" placeholder="password " id="passname"><br>
+                <p class="loginp" id="passe"></p>
+                <input type="submit">
+            </form>
+        </div>
+
+
+
+
+    </div>
+    <style>
+        #bodylogin {
+            background-color: #3498db;
+            text-align: center;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            height: 55vh;
+            margin: 20px 0px;
+
+        }
+
+        #container-login {
+            
+            text-align: center;
+            background-color: white;
+            padding: 50px;
+            margin: 20px 0px;
+ 
+        }
+        input{
+            margin: 10px;
+            width: 200px;
+            padding: 10px;
+        }
+        #loginh2{
+            font-size: 20px;
+        }
+        input[type="submit"]{
+            background-color: #3498db;
+            color: white;
+            border: 0px;
+            width: 225px;
+        }
+        .loginp{
+            text-align: left;
+            font-size: 15px;
+            margin: 0px 0px 0px 12px;
+            color: red;
+        }
+
+     
+    </style>
+    <script>
+
+        let username = document.getElementById("username")
+        let passname = document.getElementById("passname")
+
+        let usere = document.getElementById("usere")
+        let passe = document.getElementById("passe")
+        let a = 1
+
+        function formfilled(){
+
+            if(username.value == ""){
+                usere.innerHTML = "user name is empty"
+                a = 0
+
+            }
+            else if(username.value.length < 8){
+                usere.innerHTML = "user name required min 8 char"
+                a = 0
+            }
+            else{
+                usere.innerHTML= ""
+                a = 1
+            }
+            if(passname.value == ""){
+                passe.innerHTML = "password is empty"
+                a = 0
+
+            }
+            else if(passname.value.length < 8){
+                passe.innerHTML = "password required min 8 char"
+                a = 0
+            }
+            else{
+                passe.innerHTML= ""
+                a = 1
+            }
+            if(a){
+                return true;
+            }else{
+                return false;
+            }
+
+            
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- -----------------------------------------------------2 end--------------------------------------------------------------------------------------- -->
 
     <br><br><br><br><br>
 
@@ -201,7 +333,7 @@
 
         /* ----------------------------------------------star media querry temp converter----------------------------------------------------------------------------------------    */
 
-/* 
+        /* 
         @media (max-width:40.0rem) {
             #container {
 
@@ -282,7 +414,7 @@
 
     <br><br> <br><br>
     <div id="ceter2">
-        <h2 id="h2">word counter</h2>
+        <h2 id="counterh2">word counter</h2>
         <textarea id="textbox" cols="30" rows="10"></textarea>
         <p id="pwordc"> word <span class="both" id="word">0</span> charecter <span class="both" id="char">0</span>
         </p>
@@ -292,7 +424,7 @@
             margin: 5.0rem 20.0rem;
         }
 
-        h2 {
+        #counterh2 {
             text-align: center;
             background-color: #bd3f3f80;
             padding: 1.0rem;
@@ -381,6 +513,7 @@
         /* ----------------------------------------------end media querry word converter----------------------------------------------------------------------------------------------    */
     </style>
     <style>
+
     </style>
     <style>
         /* body {
@@ -642,85 +775,93 @@
                 for (let elm of text) {
                     elm.style.color = "white"
                 }
-        
 
-            } else if (color == '#00008b'){
+
+            } else if (color == '#00008b') {
                 for (let elm of text) {
                     elm.style.color = "red"
                 }
             }
-            
-            
+
+
             else {
                 for (let elm of text) {
                     elm.style.color = "black"
                 }
 
             }
-            
+
         }
-      
+
     </script>
     <style>
-        @media(max-width: 400px){
-    
-    html{
-        font-size: 15.625%;
-    }
-    
-    }
-    @media (min-width:400px) and (max-width: 700px){
-    
-    html{
-        font-size: 21%;
-    }
-    
-    }
-    @media(min-width:700px) and (max-width: 900px){
-    
-    html{
-        font-size: 27%;
-    }
-    
-    }
-    @media(min-width:900px) and (max-width: 1100px){
-    
-    html{
-        font-size: 33%;
-    }
-    
-    }
-    @media(min-width:1100px) and (max-width: 1300px){
-    
-    html{
-        font-size: 39%;
-    }
-    
-    }
-    @media(min-width:1300px) and (max-width: 1500px){
-    
-    html{
-        font-size: 45%;
-    }
-    
-    }
-    @media(min-width:1500px) and (max-width: 1700px){
-    
-    html{
-        font-size: 51%;
-    }
-    
-    }
-    @media(min-width:1700px) and (max-width: 1900px){
-    
-    html{
-        font-size: 57999%;
-    }
-    
-    }
-    
-       </style>
-   
+        @media(max-width: 400px) {
+
+            html {
+                font-size: 15.625%;
+
+            }
+
+
+        }
+
+        @media (min-width:400px) and (max-width: 700px) {
+
+            html {
+                font-size: 21%;
+            }
+
+        }
+
+        @media(min-width:700px) and (max-width: 900px) {
+
+            html {
+                font-size: 27%;
+            }
+
+        }
+
+        @media(min-width:900px) and (max-width: 1100px) {
+
+            html {
+                font-size: 33%;
+            }
+
+        }
+
+        @media(min-width:1100px) and (max-width: 1300px) {
+
+            html {
+                font-size: 39%;
+            }
+
+        }
+
+        @media(min-width:1300px) and (max-width: 1500px) {
+
+            html {
+                font-size: 45%;
+            }
+
+        }
+
+        @media(min-width:1500px) and (max-width: 1700px) {
+
+            html {
+                font-size: 51%;
+            }
+
+        }
+
+        @media(min-width:1700px) and (max-width: 1900px) {
+
+            html {
+                font-size: 57999%;
+            }
+
+        }
+    </style>
+
 
 
 </body>
