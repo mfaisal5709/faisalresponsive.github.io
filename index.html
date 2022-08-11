@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mfaisal.github.io</title>
+    
     <!----------------------------------------------------start temp counter------------------------------------------------------------------------------- -->
 
     </div>
@@ -38,7 +39,7 @@
         .sticky {
             position: fixed;
             top: 0;
-            width: 100%;
+            width: 186.0rem;
 
         }
 
@@ -51,7 +52,7 @@
             width: 25.0rem;
             height: auto;
             text-align: center;
-            border-radius: 50%;
+            border-radius: 5.0rem;
         }
 
         .abcdf {
@@ -129,6 +130,134 @@
 
     </script>
     <!-- -----------------------------------------------------1 end--------------------------------------------------------------------------------------- -->
+    <!-- -----------------------------------------------------3 start--------------------------------------------------------------------------------------- -->
+<div class="slide-container">
+    <div class="slide">
+        <img src="https://wallpaperaccess.com/full/51363.jpg" alt="">
+        <div class="caption">caption text 1</div>
+    </div>
+    <div class="slide">
+        <img src="https://wallpaperaccess.com/full/51364.jpg" alt="">
+        <div class="caption">caption text 2</div>
+    </div>
+    <div class="slide">
+        <img src="https://wallpaperaccess.com/full/51365.jpg" alt="">
+        <div class="caption">caption text 3</div>
+    </div>
+    <div class="slide">
+        <img src="https://wallpaperaccess.com/full/51366.jpg" alt="">
+        <div class="caption">caption text 4</div>
+    </div>
+    <div class="slide">
+        <img src="https://wallpaperaccess.com/full/51367.jpg" alt="">
+        <div class="caption">caption text 5</div>
+    </div>
+    <span class="arrow prev" onclick="controller(-1)">&#10094</span>
+    <span class="arrow next" onclick="controller(1)">&#10095</span>
+</div>
+<style>
+   .slide-container{
+    position: relative;
+    width: 186.0rem;
+   }
+    .slide img{
+        width: 186.0rem;
+        height: 40.0rem ;
+    }
+    .arrow{
+        cursor: pointer;
+        font-size: 3.0rem ;
+        top: 18.0rem ;
+        position: absolute;
+        color: black;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.553);
+        padding: .8rem  2.0rem ;
+        border-radius: 5.0rem ;
+    }
+    .prev{
+        left: 1.0rem ;
+    }
+    .next{
+        right: 1.0rem ;
+    }
+    .caption{
+        font-size: 3.0rem ;
+        font-weight: bold;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.644);
+        position: absolute;
+        text-align: center;
+        width: 186.0rem ;
+        bottom: .0rem ;
+    }
+    .slide{
+        display: none;
+    }
+</style>
+<script>
+    flag = 0;
+    function controller(x){
+        flag = flag + x;
+        slideshow(flag);
+    }
+
+slideshow(flag);
+
+    function slideshow(num){
+        let slide = document.getElementsByClassName("slide");
+        if(flag == slide.length){
+            flag = 0;
+            num = 0;
+        }
+        if(flag < 0){
+            flag = slide.length-1;
+            num = slide.length-1;
+        }
+        for(let y of slide){
+            y.style.display ="none"
+        }
+
+      
+
+        slide[num].style.display = "block";
+
+    }
+    
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- -----------------------------------------------------3 end--------------------------------------------------------------------------------------- -->
     <!-- -----------------------------------------------------2 start--------------------------------------------------------------------------------------- -->
 
     <div id="bodylogin">
@@ -888,6 +1017,9 @@
                 font-size: 57999%;
             }
 
+        }
+        body{
+            margin: 0%;
         }
     </style>
 
